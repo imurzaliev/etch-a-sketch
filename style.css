@@ -8,9 +8,15 @@ body {
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   aspect-ratio: 1;
+  width: 30vw;
+  border: 5px solid rgb(82, 239, 245);
 }
 
 .content {
-  padding: 0.5rem;
-  border: 1px solid red;
+  border: 1px dashed rgb(156, 153, 153);
+  transition: all 0.07s ease;
+}
+
+.drawing {
+  background-color: indigo;
 }
