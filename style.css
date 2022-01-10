@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  aspect-ratio: 1;
+}
+
+.content {
+  padding: 0.5rem;
+  border: 1px solid red;
+}
