@@ -5,10 +5,6 @@ clearButton.addEventListener("click", () => {
   clearButton.classList.add("clicked");
 });
 
-clearButton.addEventListener("transitionend", () => {
-  clearButton.classList.remove("clicked");
-});
-
 const screen = document.createElement("div");
 screen.classList.add("screen");
 container.appendChild(screen);
@@ -26,5 +22,12 @@ const pixels = document.querySelectorAll(".content");
 pixels.forEach((pixel) => {
   pixel.addEventListener("mouseover", () => {
     pixel.classList.add("drawing");
-  });
+  }),
+    clearButton.addEventListener("transitionend", () => {
+      clearButton.classList.remove("clicked"), clearScreen(pixel, "drawing");
+    });
 });
+
+function clearScreen(elem, elemClass) {
+  elem.classList.remove(elemClass);
+}
