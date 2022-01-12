@@ -4,12 +4,21 @@ body {
 }
 
 .container {
+  height: 100vh;
+}
+
+.btn {
+  text-align: center;
+}
+
+.screen {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   aspect-ratio: 1;
-  width: 30vw;
+  max-width: 500px;
   border: 5px solid rgb(82, 239, 245);
+  margin: auto;
 }
 
 .content {
@@ -19,4 +28,22 @@ body {
 
 .drawing {
   background-color: indigo;
+}
+
+.clr {
+  color: white;
+  font-size: 20px;
+  background-color: cadetblue;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  width: 300px;
+  margin: 25px auto;
+  transition: all 0.07s ease;
+}
+
+.clicked {
+  transform: scale(1.1);
+  border-color: cyan;
+  box-shadow: 0 0 1rem cyan;
 }
