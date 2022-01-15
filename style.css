@@ -13,8 +13,6 @@ body {
 
 .screen {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
   aspect-ratio: 1;
   max-width: 500px;
   border: 5px solid rgb(82, 239, 245);
@@ -22,7 +20,7 @@ body {
 }
 
 .content {
-  border: 1px dashed rgb(156, 153, 153);
+  border: 1px dotted rgb(156, 153, 153);
   transition: all 0.07s ease;
 }
 
@@ -37,7 +35,7 @@ body {
   border-radius: 5px;
   border: none;
   padding: 0.5rem;
-  width: 300px;
+  width: 25rem;
   margin: 25px auto;
   transition: all 0.07s ease;
 }
