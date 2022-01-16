@@ -3,7 +3,7 @@ const clearButton = document.querySelector("button");
 const screen = document.createElement("div");
 screen.classList.add("screen");
 container.appendChild(screen);
-let screenArea = 3;
+let screenArea = 16;
 
 function createScreen(area) {
   screen.setAttribute(
